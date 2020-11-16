@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    username: root
+    password: gbmysql-568028827227
+    url: jdbc:mysql://47.110.240.241:3306/mybatis?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+mybatis-plus:
+  global-config:
+    id-type: 1
+    db-config:
+      login-delete-value: 1 #逻辑已删除值（默认为1）
+      login-not-delete-value: 0 #逻辑未删除值（默认为0）
+    configuration:
+      jdbc-type-for-null: 'null' #当无法匹配对应的数据库类型是转为'null'
